@@ -1,0 +1,88 @@
+@import 'var.less';
+
+.main-section{
+   margin-top: 30px;
+
+    @media only screen and (min-width: @mobile) {
+        display: flex;
+        // margin: 30px auto 0 auto;
+        
+    }
+   
+
+   &-joint{
+       flex-basis: 70%;
+       min-height: 400px;
+       background-image: url('https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg');
+       background-size: cover;
+       background-position: bottom right;
+       padding: 50px;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+       margin-bottom: 20px;
+
+       @media only screen and (min-width: @mobile) {
+           margin: 0 16px 20px 0;
+       }
+
+     
+
+       h1{
+           background-color: @color-brown;
+           padding: 5px;
+           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+           text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+           color: @color-black;
+           font-size: 30px;
+       }
+
+       p{
+           background-color: @color-brown;
+           padding: 5px;
+           font-weight: 900;
+           color: @color-black;
+           text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+       }
+
+   }
+
+   
+   &-prices{
+
+       @media only screen and (min-width: @mobile) {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-item{
+            background-color: @color-brown;
+            margin-bottom: 20px;
+            padding: 3.2px 16px 0 16px;
+            text-align: center;
+
+            @media only screen and (min-width: @mobile) {
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            h3{
+                font-size: 60px;
+                font-weight: 300;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+                              
+            }
+                
+            p{
+                font-weight: 900;
+                text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+            }
+        }
+            
+    }
+}
